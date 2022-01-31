@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css" />
+    <title>LE DEPENDU | Level Selector</title>
+</head>
+
+<body>
+    <header>    
+        <h1>LE DEPENDU</h1>
+
+        <h3>Choisi ton niveau d'évasion
+        </h3>        
+    </header>
+
+    <section>
+
+        <div> 
+            <form method="POST">
+            <label>
+                Bonjour <strong>{{.Name}}</strong> 
+            </label> 
+            <input placeholder="Enter your pseudo..." type="text" id="Field" class="form" name="name"/>
+        </div>
+
+        <div>
+            Tu as choisis : <strong> level {{.Level}}</strong> </br>
+             <button name="Level" value="1" class="Selector" >
+              Level 1                   
+            </button>
+
+             <button name="Level" value="2" class="Selector" >
+                Level 2
+            </button>
+
+            <button name="Level" value="3" class="Selector" >
+                Level 3
+            </button>
+
+            </form>
+        </div>
+
+        <div  title="Clic here to start" name="Start" type="submit" class="button" Value="1">
+            <a href="/Game" type="submit">
+                Start
+            </a>
+        </div>
+    </section>
+
+        <nav>
+            <div title="Clic here to go back into the main menu" class="button">
+                    <a href="/home">
+                        Menu Principal
+                    </a>
+            </div>
+        </nav>
+</body>
+</html>

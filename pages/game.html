@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>LE DEPENDU | Game Section</title>
+</head>
+<body>
+
+    <header>
+        <h1>LE DEPENDU</h1>
+    </header>
+
+    <section>
+
+        <div class="GameWord">
+            {{.Gameword}} 
+        </div>
+
+        <div>
+            <form method="POST">     
+                <label>
+                    <strong>{{.Name}}</strong> Devine une lettre
+                </label>
+                <input placeholder="Submit your Letter" name="letter" type="text" value="" class="form"/>
+                <input type="submit" value="submit" class="submitbutton" />
+            </form>
+        </div>
+
+        <div>
+            <img widht="350px" height="350" class="Mindes" src={{.Deadman}} >
+        </div>
+
+
+        <div>
+            {{.Lettersused}}
+        </div>
+
+        <div>
+            <p>
+               <img width="25" height="25" src="static/pictures/heart.png"> {{.Life}} HP remaining
+            </p>
+        </div>
+
+    </section>
+
+    <nav>
+        <div title="Clic here to go back into the main menu" class="navbar">
+            <a href="/ChooseLevel">
+                Recomencer
+            </a>
+        </div>
+
+        <div title="Clic here to go back into the main menu" class="navbar">
+                <a href="/home">
+                    Menu Principal
+                </a>
+        </div>
+    </nav>
+
+</body>
+</html>
